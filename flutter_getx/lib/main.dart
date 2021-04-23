@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/pages/home/home_page.dart';
 import 'package:flutter_getx/routes.dart';
+import 'package:flutter_getx/utils/constants/colors.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -8,7 +9,10 @@ void main() {
     home: HomePage(),
     getPages: pages,
     debugShowCheckedModeBanner: false,
-    theme: ThemeData(fontFamily: 'Inter'),
+    theme: ThemeData(
+      fontFamily: 'Inter',
+      primaryColor: colorDefault
+    ),
   ));
 }
 
